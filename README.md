@@ -7,5 +7,5 @@
 </picture>
 
 <picture>
-  <img src="[https://github.com/Karpukhin-D/Task-4/blob/main/game/2.png](https://github.com/Karpukhin-D/Task-5/blob/main/2.png)">
+  <img src="https://github.com/Karpukhin-D/Task-5/blob/main/2.png">
 </picture>
