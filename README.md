@@ -3,7 +3,7 @@
 ## Выполнили студенты группы П25-2.1 Карпухин Дмитрий и Есин Данила
 ---
 <picture>
-  <img src="[https://github.com/Karpukhin-D/Task-4/blob/main/game/1.png](https://github.com/Karpukhin-D/Task-5/blob/main/1.png)">
+  <img src="https://github.com/Karpukhin-D/Task-5/blob/main/1.png">
 </picture>
 
 <picture>
