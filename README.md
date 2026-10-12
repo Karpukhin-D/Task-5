@@ -24,12 +24,12 @@ class Program
         int[] dangerHp = { 35, 70, 135 };
 
         int[] workshop = { 1, 2, 3 };
-        int[] gasLevels = { 40, 75, 95 };  // Массив уровней загазованности трех цехов
-        bool[] explosionRisk = { false, true, true }; // Массив наличия риска взрыва для трех цехов
+        int[] gasLevels = { 40, 75, 95 };  
+        bool[] explosionRisk = { false, true, true }; 
 
-        int[] survivorsCount = { 3, 5, 2, 4 }; // Число спасенных людей в четырех отсеках
+        int[] survivorsCount = { 3, 5, 2, 4 }; 
 
-        int[] ppmLog = { 120, 350, 210, 480, 290 }; // Массив из пяти контрольных измерений токсичных паров
+        int[] ppmLog = { 120, 350, 210, 480, 290 }; 
 
 
         Console.WriteLine("=== СПАСАТЕЛИ МЧС ===");
@@ -38,9 +38,9 @@ class Program
 
         Console.WriteLine("Опасности на территории:");
 
-        for (int i = 0; i < dangers.Length; i++) // Повторяем действия для каждой опасности в массиве
+        for (int i = 0; i < dangers.Length; i++) 
         {
-            Console.WriteLine($"{dangers[i]} — {dangerHp[i]} HP"); // Выводим название опасности и соответствующее ей здоровье
+            Console.WriteLine($"{dangers[i]} — {dangerHp[i]} HP"); 
         }
 
         Console.WriteLine();
@@ -55,7 +55,7 @@ class Program
         Console.WriteLine();
 
         string neededEquipment = "Гидравлические ножницы";
-        int equipmentIndex = Array.IndexOf(equipment, neededEquipment); // Array.IndexOf ищет предмет в массиве и возвращает его индекс.
+        int equipmentIndex = Array.IndexOf(equipment, neededEquipment); 
 
         if (equipmentIndex != -1)
         {
@@ -76,7 +76,7 @@ class Program
         {
             string risk; 
 
-            if (explosionRisk[i] == true) // проверяем значение риска для текущего цеха
+            if (explosionRisk[i] == true) 
             {
                 risk = "Есть";
             }
@@ -90,7 +90,7 @@ class Program
 
         Console.WriteLine();
 
-        int totalSurvivors = 0; //общее количество спасенных людей
+        int totalSurvivors = 0; 
 
         for (int i = 0; i < survivorsCount.Length; i++)
         {
@@ -101,14 +101,14 @@ class Program
 
         Console.WriteLine();
 
-        int maxPpm = ppmLog[0]; // Считаем, что первый замер пока является максимальным
-        int maxPpmIndex = 0; // Запоминаем индекс первого замера
+        int maxPpm = ppmLog[0]; 
+        int maxPpmIndex = 0; 
 
-        for (int i = 1; i < ppmLog.Length; i++)  // начинаем с индекса 1, т.к. элемент с индексом 0 уже выбран как начальный максимум
+        for (int i = 1; i < ppmLog.Length; i++)  
         {
-            if (ppmLog[i] > maxPpm) // Сравниваем текущий замер с найденным максимумом
+            if (ppmLog[i] > maxPpm) 
             {
-                maxPpm = ppmLog[i]; // Если нашли большее значение, обновляем максимум.
+                maxPpm = ppmLog[i]; 
                 maxPpmIndex = i;
             }
         }
@@ -122,9 +122,9 @@ class Program
 
         Console.WriteLine("Замеры ppm по возрастанию:");
 
-        for (int i = 0; i < ppmLog.Length; i++) // перебираем отсортированный массив по индексам
+        for (int i = 0; i < ppmLog.Length; i++) 
         {
-            Console.WriteLine($"{i + 1}. {ppmLog[i]} ppm"); // Выводим порядковый номер замера и его значение
+            Console.WriteLine($"{i + 1}. {ppmLog[i]} ppm"); 
         }
 
         Console.WriteLine();
