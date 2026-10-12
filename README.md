@@ -5,7 +5,7 @@
 <picture>
   <img src="https://github.com/Karpukhin-D/Task-5/blob/main/1.png">
 </picture>
-
+---
 <picture>
   <img src="https://github.com/Karpukhin-D/Task-5/blob/main/2.png">
 </picture>
